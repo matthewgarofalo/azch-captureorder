@@ -66,9 +66,9 @@ stages:
     windowsScannerVersion: '4.2.0'
 
 - task: PublishPipelineArtifact@0
-      inputs:
-        artifactName: 'manifests'
-        targetPath: 'manifests'
+  inputs:
+    artifactName: 'manifests'
+    targetPath: 'manifests'
 
 - stage: DeployDev
   displayName: Deploy to dev stage
